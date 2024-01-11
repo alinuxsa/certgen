@@ -2,9 +2,9 @@ name: generate self sign cert
 
 on: 
   workflow_dispatch:
-  inputs:
-    domain: 
-      description: 域名或IP
+    inputs:
+      domain: 
+        description: 域名或IP
 
 jobs:
   build:
