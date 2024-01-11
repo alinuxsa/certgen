@@ -10,4 +10,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello ${{ domain }}"
+      - run: echo "hello ${{ github.event.inputs.domain }}"
