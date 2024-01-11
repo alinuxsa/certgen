@@ -1,0 +1,13 @@
+name: generate self sign cert
+
+on: 
+  workflow_dispatch:
+  inputs:
+    domain: 
+      description: 域名或IP
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello ${{ domain }}"
